@@ -15,20 +15,21 @@ export const theme = extendTheme({
         darkgray: "#161a1d",
         gray: "#b1a7a6",
         lightgray: "#d3d3d3",
+        lightestgray: "#f1f1f1",
         ice: "#f5f3f4",
         white: "#FFFFFF",
     },
     styles: {
 		global: {
 			"html, body, h1": {
-				fontFamily: 'Merriweather, serif',
+				fontFamily: 'San Francisco, Merriweather, serif',
 			},
 		},
 	},
     components:{
         Heading:{
             baseStyle:{
-                fontFamily: 'Merriweather, serif',
+                fontFamily: 'San Francisco, Merriweather, serif',
             }
         },
         Button: {

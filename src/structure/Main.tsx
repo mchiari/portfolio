@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import React from 'react'
 import About from '../components/About'
 import Landing from '../components/Landing'
@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <Box>
       <Landing />
-      <About />
       <Portfolio />
+      <About />
       <News />
     </Box>
   )

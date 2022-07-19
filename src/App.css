@@ -1,3 +1,44 @@
 .App {
-  text-align: center;
+	text-align: center;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  position: relative;
+  display: grid;
+  place-items: center;
+  top: 120px;
+  left: 70px;
+  z-index: 1;
+}
+
+.typing {
+  width: 14ch;
+  animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 8px solid white;
+  font-family: monospace;
+  font-size: 1.2em;
+  z-index: 1;
+  transform: rotate(30deg) skew(30deg);
+  color: aliceblue;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }

@@ -11,8 +11,8 @@ type aboutSectionProps = {
 const AboutSection = (props : aboutSectionProps) => {
   return (
     <Box display={'flex'} gap={5} minH={'150px'}>
-    <Box ml={10} w={'5px'} borderLeft={'solid 2px #d3d3d3'}>
-        <Box borderRadius={'60px'} w={'16px'} border={'solid 3px white'} bgColor={'white'} transform={'translate(-9px,-4px)'}>
+    <Box w={'5px'} borderLeft={'solid 2px #d3d3d3'}>
+        <Box borderRadius={'60px'} w={'16px'} border={'solid 3px lightgray'} bgColor={'white'} transform={'translate(-9px,-4px)'}>
             <Box borderRadius={10} w={'2px'} border={'solid 5px #0077b6'} bgColor={'#0077b6'} transform={'translate(0,0px)'}></Box>
         </Box>
     </Box>

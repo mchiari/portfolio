@@ -1,31 +1,50 @@
 import { StarIcon } from '@chakra-ui/icons'
 import { Box, Button, Heading, Square, Text } from '@chakra-ui/react'
+import { useState } from 'react';
 
 const Header = () => {
+	const [color, setColor] = useState("");
+
+	const handleScroll = () => {
+		if (window.scrollY > 0) {
+			if (!color) {
+				setColor("red");
+			}
+		} else {
+			if (color) {
+				setColor("");
+			}
+		}
+	};
+
+	window.addEventListener("scroll", handleScroll);
+
     return (
         <Box
+        bgColor={!color ? "transparent" : "black"}
             position={'fixed'}
-            borderBottom={'solid 1px lightgray'}
             zIndex={'sticky'} w={'100%'}
             h={'100px'}
-            bgColor={'white'}
-            color={'black'}
+            color={!color ? "black" : "white"}
             display={'flex'}
             flexDir={'row'}
             justifyContent={'space-around'}
             alignItems={'center'}
+            transition={"ease-in-out 500ms"}
         >
             <Box display={'flex'}>
                 <Square px={5}>
                     <StarIcon />
                 </Square>
-                <Heading as={'h3'} color={'dark'} size={'md'}>@mchiaridev</Heading>
+                <Heading as={'h3'} color={!color ? "black" : "white"} size={'lg'}>@mchiaridev</Heading>
             </Box>
-            <Box display={'flex'} flexDirection={'row'} justifyContent={'center'} alignItems={'center'} gap={5}>
-                <Text>Home</Text>
-                <Text>Portfolio</Text>
-                <Text>About</Text>
-                <Button ml={'20px'}>entrar em contato</Button>
+            <Box display={'flex'} flexDirection={'row'} justifyContent={'center'} alignItems={'center'} gap={5} fontWeight={'bold'}>
+
+                <a href={'#home'}><Text>Home</Text></a>
+                <a href={'#portfolio'}><Text>Recent work</Text></a>
+                <a href={'#lifeExperience'}><Text>Life Experience</Text></a>
+
+                <Button colorScheme={!color ? "navy" : "orange"} ml={'20px'}>Send me a message</Button>
             </Box>
         </Box>
     )
