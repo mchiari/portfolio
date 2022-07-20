@@ -21,7 +21,7 @@ const Header = () => {
 
 	return (
 		<Box
-			bgColor={!color ? "transparent" : "black"}
+			bgColor={!color ? "transparent" : "darkgray"}
 			position={"fixed"}
 			zIndex={"sticky"}
 			w={"100%"}
@@ -63,7 +63,7 @@ const Header = () => {
 					<Text>Life Experience</Text>
 				</a>
 
-				<Button colorScheme={!color ? "navy" : "orange"} ml={"20px"}>
+				<Button variant={!color ? 'none' : "secondary"} ml={"20px"}>
 					Send me a message
 				</Button>
 			</Box>

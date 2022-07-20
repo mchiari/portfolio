@@ -1,8 +1,11 @@
-import { AtSignIcon, ExternalLinkIcon, StarIcon } from "@chakra-ui/icons";
+import { AtSignIcon, ExternalLinkIcon, Icon, StarIcon } from "@chakra-ui/icons";
 import { Box, Button, Heading, Image, keyframes, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { LinkedinIconWhite, InstagramIconWhite, GithubIconWhite } from "../theme/icons";
 
 const Landing = () => {
+
+
 	const titleKeyframes = keyframes`
 	0% { opacity: 0; transform: translateX(-100px)  }
 	100% { opacity: 1; transform: translateX(0)  }
@@ -52,7 +55,7 @@ const Landing = () => {
 						target={"_blank"}
 						rel={"noreferrer"}
 					>
-						<Button colorScheme={'blue'} rightIcon={<ExternalLinkIcon />}>
+						<Button rightIcon={<LinkedinIconWhite />}>
 							LinkedIn
 						</Button>
 					</a>
@@ -62,9 +65,9 @@ const Landing = () => {
 						rel={"noreferrer"}
 					>
 						<Button
-							// variant={"outline"}
-							colorScheme={"green"}
-							rightIcon={<StarIcon />}
+							variant={"dark"}
+							
+							rightIcon={<GithubIconWhite />}
 						>
 							Github
 						</Button>
@@ -75,11 +78,10 @@ const Landing = () => {
 						rel={"noreferrer"}
 					>
 						<Button
-							// variant={"outline"}
-							colorScheme={"orange"}
-							rightIcon={<AtSignIcon />}
+							variant={"dark"}
+							rightIcon={<InstagramIconWhite />}
 						>
-							Insta
+							Instagram
 						</Button>
 					</a>
 				</Box>

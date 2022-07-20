@@ -2,6 +2,7 @@ import { ExternalLinkIcon, StarIcon } from "@chakra-ui/icons";
 import { Box, Button, IconButton, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { PortfolioCasesProps } from "../data/portfolioCases";
+import { GithubIconBlack, GithubIconWhite } from "../theme/icons";
 
 export const PortfolioCard = ({
 	image,
@@ -12,6 +13,7 @@ export const PortfolioCard = ({
 }: PortfolioCasesProps) => {
 	return (
 		<Box
+		backgroundColor={'white'}
 			position={"relative"}
 			display={"flex"}
 			alignItems={"center"}
@@ -26,7 +28,6 @@ export const PortfolioCard = ({
 			boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.2)"}
 			_hover={{
 				transition: "box-shadow .5s",
-				cursor: "pointer",
 				boxShadow: "4px 4px 8px 0px rgba(0,0,0,0.5)",
 			}}
 		>
@@ -78,9 +79,8 @@ export const PortfolioCard = ({
 					</a>
 					<Button
 						aria-label='github'
-						rightIcon={<StarIcon />}
-						colorScheme='teal'
-						variant={"outline"}
+						rightIcon={<GithubIconWhite />}
+						variant={"dark"}
 						mt={5}
 					>
 						Repo

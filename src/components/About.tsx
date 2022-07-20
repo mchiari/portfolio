@@ -1,65 +1,62 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
-import AboutSection from "./AboutSection";
+import { Box, List, ListItem, Text } from "@chakra-ui/react";
+import React from "react";
 
 const About = () => {
 	return (
-		<Container
+		<Box
+			bgColor={"lightestgray"}
 			display={"flex"}
-			flexDirection={"column"}
-			maxW={"100%"}
-			py={"60px"}
-			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
-			id={"lifeExperience"}
+			justifyContent={"center"}
+			alignItems={"center"}
 		>
-			<Box pl={"100px"} py={"50px"} display={"flex"}>
-				<Heading as='h2'>Life Experience</Heading>
-			</Box>
-
 			<Box
-				h={"auto"}
-				maxW={"100%"}
-				display={"flex"}
-				justifyContent={"center"}
-				alignItems={"center"}
-				flexWrap={"wrap"}
-				pb={"24px"}
-			>
-				<AboutSection
-					date={"mar, 2022 until now"}
-					title={"LINKTOU"}
-					role={"Front-end Developer"}
-					place={"São Paulo, Brazil"}
-					description={
-						"Acting as a front-end developer, works on creating and maintaining scallable web applications under agile methodology and Azure DevOps. Daily usage of Javascript, React, Redux, Styled-Components and other technologies in solo and pair programming."
-					}
-				/>
-				{/* <AboutSection date={'sep, 2021'} title={`NOTARY'S OFFICE`} role={'Public Notary'} place={'São Vicente, Brazil'} description={'Responsible for costumer experience, business success and public service, worked as a Public Notary in 3º Tabelião de Notas de São Vicente, managing civil interests and real estate matters.'} /> */}
-				{/* <AboutSection date={'dec, 2019'} title={'ATTORNEY'} role={'Independent Practice'} place={'São Paulo, Brazil'} description={'Due to acceptance on Brazilian State Bar (OAB) straight out of Law School, worked as an attorney for digital, corporate, labor and real estate law.'} /> */}
-				<AboutSection
-					date={"dec, 2019 to dec, 2021"}
-					title={"ATTORNEY AND NOTARY"}
-					role={"Independent Practice and Public Service"}
-					place={"São Vicente, Brazil"}
-					description={`Accepted on Brazilian State Bar (OAB), worked as an attorney for digital, corporate, labor and real estate law and as a Notary in a Public Notary's office.`}
-				/>
-				<AboutSection
-					date={"dec, 2016 to dec, 2019"}
-					title={"LAW SCHOOL"}
-					role={"Santos Catholic Unniversity"}
-					place={"Santos, Brazil"}
-					description={
-						"Graduated on local Law School. Studied civil interests and public and private real estate business."
-					}
-				/>
-				<AboutSection
-					date={"jan, 2010 to dec, 2014"}
-					title={"SYSTEMS DEVELOPMENT"}
-					role={"Federal Institute of Science and Technology"}
-					place={"Cubatão, Brazil"}
-					description={`In love with computer systems and it's development, studied computer architecture, networks, data structure, web and local development. Worked mostly with Javascript and C#, having had a few intership experiences.`}
-				/>
+				bgImage={"/imgs/perfil.jpg"}
+				boxSize={"300px"}
+				backgroundSize={"cover"}
+				borderRadius={"50%"}
+			/>
+			<Box maxW={"600px"} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                <Box>
+
+				<Text>
+					I am a Front-End development professional, focused on the
+					user experience and on solving dificult problems using
+					simple methods.
+				</Text>
+				<Text>
+					I believe that usability, security, pragmatism and clean
+					code are the ways to achieve the application objectives.
+					Team work, continuous studying and daily learning are
+					essential to any excelling professional.
+				</Text>
+				<Text>
+					I Bring with me the experience acquired in over 4 years
+					acting as lawyer and public notary, having focused on
+					business solutions to my former and new clients.
+				</Text>
+                </Box>
+
+				<Box minW={'200px'}>
+					<List >
+						<ListItem>HTML</ListItem>
+						<ListItem>CSS</ListItem>
+						<ListItem>Javascript</ListItem>
+						<ListItem>Typescript</ListItem>
+						<ListItem>Next.js</ListItem>
+						<ListItem>Git</ListItem>
+						<ListItem>React</ListItem>
+						<ListItem>Redux</ListItem>
+						<ListItem>Styled Components</ListItem>
+						<ListItem>Material UI</ListItem>
+						<ListItem>ChakraUI</ListItem>
+						<ListItem>Agile methodology</ListItem>
+						<ListItem>Corel Draw</ListItem>
+						<ListItem>UI/UX notions</ListItem>
+						<ListItem>Figma</ListItem>
+					</List>
+				</Box>
 			</Box>
-		</Container>
+		</Box>
 	);
 };
 

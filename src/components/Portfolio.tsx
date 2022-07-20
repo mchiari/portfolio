@@ -35,7 +35,7 @@ const Portfolio = () => {
             >
                 {projects.map((project: PortfolioCasesProps, index: number) => {
                     return (
-                        <>
+
                             <PortfolioCard
                                 key={"project-" + project.title}
                                 image={project.image}
@@ -44,8 +44,7 @@ const Portfolio = () => {
                                 description={project.description}
                                 tags={project.tags}
                             />
-                            {/* <Divider key={'divider'+index} /> */}
-                        </>
+
                     );
                 })}
             </Box>
