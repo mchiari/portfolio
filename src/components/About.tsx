@@ -5,39 +5,54 @@ const About = () => {
 	return (
 		<Box
 			bgColor={"lightestgray"}
+			py={"100px"}
 			display={"flex"}
 			justifyContent={"center"}
 			alignItems={"center"}
 		>
 			<Box
-				bgImage={"/imgs/perfil.jpg"}
-				boxSize={"300px"}
-				backgroundSize={"cover"}
-				borderRadius={"50%"}
-			/>
-			<Box maxW={"600px"} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-                <Box>
-
-				<Text>
-					I am a Front-End development professional, focused on the
-					user experience and on solving dificult problems using
-					simple methods.
-				</Text>
-				<Text>
-					I believe that usability, security, pragmatism and clean
-					code are the ways to achieve the application objectives.
-					Team work, continuous studying and daily learning are
-					essential to any excelling professional.
-				</Text>
-				<Text>
-					I Bring with me the experience acquired in over 4 years
-					acting as lawyer and public notary, having focused on
-					business solutions to my former and new clients.
-				</Text>
-                </Box>
-
-				<Box minW={'200px'}>
-					<List >
+				display={"flex"}
+				justifyContent={"space-around"}
+				alignItems={"center"}
+				w={"1500px"}
+				border={"1px solid red"}
+			>
+				<Box
+					bgImage={"/imgs/perfil.jpg"}
+					boxSize={"300px"}
+					minH={'300px'}
+					minW={'300px'}
+					backgroundPosition={'center'}
+					backgroundSize={"cover"}
+					borderRadius={"50%"}
+				/>
+				<Box
+					maxW={"800px"}
+					display={"flex"}
+					flexDirection={"column"}
+					justifyContent={"center"}
+					textAlign={'left'}
+					gap={10}
+				>
+					<Text>
+						I am a Front-End development professional, focused on
+						the user experience and on solving dificult problems
+						using simple methods.
+					</Text>
+					<Text>
+						I believe that usability, security, pragmatism and clean
+						code are the ways to achieve the application objectives.
+						Team work, continuous studying and daily learning are
+						essential to any excelling professional.
+					</Text>
+					<Text>
+						I Bring with me the experience acquired in over 4 years
+						acting as lawyer and public notary, having focused on
+						business solutions to my former and new clients.
+					</Text>
+				</Box>
+				<Box minW={"200px"} border={"solid 1px lightgray"} borderRadius={'40px'} my={'40px'} bgColor={'ice'}>
+					<List>
 						<ListItem>HTML</ListItem>
 						<ListItem>CSS</ListItem>
 						<ListItem>Javascript</ListItem>

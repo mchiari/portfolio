@@ -10,6 +10,7 @@ const Experience = () => {
 			py={"60px"}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			id={"lifeExperience"}
+			bgColor={'lightestgray'}
 		>
 			<Box pl={"100px"} py={"50px"} display={"flex"}>
 				<Heading as='h2'>Life Experience</Heading>

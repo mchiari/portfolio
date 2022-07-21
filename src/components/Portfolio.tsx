@@ -14,10 +14,12 @@ const Portfolio = () => {
         <Container
             display={"flex"}
             flexDirection={"column"}
-            bgColor={"lightestgray"}
+            bgColor={"white"}
             maxW={"100%"}
             py={'60px'}
             id={'portfolio'}
+            position={"relative"}
+			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
         >
             <Box pl={"100px"} py={'50px'} display={"flex"}>
                 <Heading as='h2'>Recent work</Heading>
