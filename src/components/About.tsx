@@ -1,5 +1,6 @@
-import { Box, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Heading, List, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
+import Skills from "./Skills";
 
 const About = () => {
 	return (
@@ -14,61 +15,53 @@ const About = () => {
 				display={"flex"}
 				justifyContent={"space-around"}
 				alignItems={"center"}
-				w={"1500px"}
-				border={"1px solid red"}
+				w={"1300px"}
+				bgColor={'white'}
+				border={"solid 1px rgba(0,0,0,0.2)"}
+				borderRadius={"4px"}
+				boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.5)"}
+				padding={'32px'}
 			>
 				<Box
 					bgImage={"/imgs/perfil.jpg"}
-					boxSize={"300px"}
-					minH={'300px'}
-					minW={'300px'}
+					minH={'250px'}
+					minW={'250px'}
 					backgroundPosition={'center'}
 					backgroundSize={"cover"}
 					borderRadius={"50%"}
 				/>
 				<Box
-					maxW={"800px"}
+					maxW={"40%"}
 					display={"flex"}
 					flexDirection={"column"}
 					justifyContent={"center"}
-					textAlign={'left'}
-					gap={10}
+					textAlign={'justify'}
+					gap={'16px'}
+					sx={{textIndent: '32px'}}
+				padding={'32px'}
+
 				>
+					<Heading as={'h3'} size={'lg'} sx={{textIndent: '0px'}}>Who am I?</Heading>
+
 					<Text>
-						I am a Front-End development professional, focused on
+						I am a brazilian <strong>Front-End Developer</strong> based in Santos - São Paulo that is focused on
 						the user experience and on solving dificult problems
-						using simple methods.
+						using <strong>simple methods.</strong>
 					</Text>
 					<Text>
-						I believe that usability, security, pragmatism and clean
-						code are the ways to achieve the application objectives.
-						Team work, continuous studying and daily learning are
-						essential to any excelling professional.
+						I can work solo or with a team and collaborate with UI/UX solutions and design systems and I believe that <strong>clean code</strong>, <strong>pragmatism</strong> and <strong>ownership</strong> are the keys to development.
 					</Text>
 					<Text>
-						I Bring with me the experience acquired in over 4 years
+						I bring with me the experience acquired in over 4 years
 						acting as lawyer and public notary, having focused on
-						business solutions to my former and new clients.
+						<strong>business solutions</strong> to my former and new clients.
+					</Text>
+					<Text>
+						In my spare time I like to <strong>study</strong> (a lot), to <strong>travel</strong> (also a lot!) and to be with my <strong>family and friends</strong> enjoying their company.
 					</Text>
 				</Box>
-				<Box minW={"200px"} border={"solid 1px lightgray"} borderRadius={'40px'} my={'40px'} bgColor={'ice'}>
-					<List>
-						<ListItem>HTML</ListItem>
-						<ListItem>CSS</ListItem>
-						<ListItem>Javascript</ListItem>
-						<ListItem>Typescript</ListItem>
-						<ListItem>Next.js</ListItem>
-						<ListItem>Git</ListItem>
-						<ListItem>React</ListItem>
-						<ListItem>Redux</ListItem>
-						<ListItem>Styled Components</ListItem>
-						<ListItem>Material UI</ListItem>
-						<ListItem>ChakraUI</ListItem>
-						<ListItem>Agile methodology</ListItem>
-						<ListItem>Corel Draw</ListItem>
-						<ListItem>UI/UX notions</ListItem>
-						<ListItem>Figma</ListItem>
-					</List>
+				<Box>
+					<Skills />
 				</Box>
 			</Box>
 		</Box>
