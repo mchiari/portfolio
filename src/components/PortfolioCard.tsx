@@ -13,7 +13,7 @@ export const PortfolioCard = ({
 }: PortfolioCasesProps) => {
 	return (
 		<Box
-		backgroundColor={'white'}
+		backgroundColor={'ice'}
 			position={"relative"}
 			display={"flex"}
 			alignItems={"center"}

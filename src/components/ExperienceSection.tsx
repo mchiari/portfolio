@@ -29,7 +29,7 @@ const ExperienceSection = (props : experienceSectionProps) => {
 
   return (
     <Box display={'flex'} gap={5} minH={'150px'}>
-    <Box w={'5px'} borderLeft={'solid 4px #d3d3d3'}>
+    <Box w={'5px'} borderLeft={'solid 4px #FFFFFF'}>
         <Box animation={animation} borderRadius={'60px'} w={'20px'} h={'20px'} border={'solid 3px #74b9ff'} bgColor={'white'} transform={'translate(-12px,-4px)'}>
             <Box borderRadius={10} w={'8px'} backgroundColor={'#0984e3'} border={'solid 7px #0984e3'} transform={'translate(0px,0px)'}></Box>
         </Box>
