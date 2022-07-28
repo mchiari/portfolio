@@ -32,17 +32,3 @@ export const iconPicker = (title: string) =>{
             }
         }
 
-
-
-        export const skillOrderChanger = (current: string,target: string) =>{
-            let a = skillTitles.indexOf(current)
-            let b = skillTitles.indexOf(target)
-            // console.log(current, skillTitles.indexOf(current))
-            // console.log(target, skillTitles.indexOf(target))
-            
-            let c = skillTitles[a]
-            skillTitles[a] = skillTitles[b]
-            skillTitles[b] = c
-            // console.log(skillTitles)
-        }
-

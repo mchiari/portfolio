@@ -6,7 +6,7 @@ const About = () => {
 	return (
 		<Box
 			bgColor={"lightestgray"}
-			py={"100px"}
+			pb={"64px"}
 			display={"flex"}
 			justifyContent={"center"}
 			alignItems={"center"}
@@ -15,12 +15,13 @@ const About = () => {
 				display={"flex"}
 				justifyContent={"space-around"}
 				alignItems={"center"}
-				w={"1300px"}
+				w={["350px","600px","800px","1000px","1200px","1300px"]}
 				bgColor={'white'}
 				border={"solid 1px rgba(0,0,0,0.2)"}
 				borderRadius={"4px"}
 				boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.5)"}
 				padding={'32px'}
+				flexDir={['column','column','column','column','row']}
 			>
 				<Box
 					bgImage={"/imgs/perfil.jpg"}
@@ -31,14 +32,14 @@ const About = () => {
 					borderRadius={"50%"}
 				/>
 				<Box
-					maxW={"40%"}
+					maxW={["100%","80%","80%","90%","80%","40%"]}
 					display={"flex"}
 					flexDirection={"column"}
 					justifyContent={"center"}
 					textAlign={'justify'}
 					gap={'16px'}
 					sx={{textIndent: '32px'}}
-				padding={'32px'}
+					padding={'32px'}
 
 				>
 					<Heading as={'h3'} size={'lg'} sx={{textIndent: '0px'}}>Who am I?</Heading>

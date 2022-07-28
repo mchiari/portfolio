@@ -17,10 +17,11 @@ const Landing = () => {
 	return (
 		<Box
 			position={"relative"}
-			h={["150vh","100vh","95vh","90vh","85vh"]}
+			bgColor={'white'}
+			h={["150vh","100vh","140vh","85vh","70vh"]}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			display={"flex"}
-			flexDirection={["column-reverse","column-reverse","row"]}
+			flexDirection={["column-reverse","column-reverse","column","row"]}
 			justifyContent={"center"}
 			alignItems={"center"}
 			gap={32}
@@ -88,16 +89,17 @@ const Landing = () => {
 			</Box>
 
 			<Box>
-			<Box className='wrapper'>
-				<span className='typing'>Hello, world!</span>
-			</Box>
+				<Box className='wrapper'>
+					<span className='typing'>Hello, world!</span>
+				</Box>
 				<Image
 					src={"/imgs/notebook.png"}
-					h={"300px"}
-					minW={'300px'}
+					boxSize={'300px'}
 					transform={"scaleX(-1) scale(1.3)"}
 				/>
 			</Box>
+
+			
 		</Box>
 	);
 };

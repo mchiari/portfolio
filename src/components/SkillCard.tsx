@@ -1,57 +1,61 @@
 import { Box } from "@chakra-ui/react";
-import React, { ReactComponentElement, useState } from "react";
-import { skillTitles } from "../data/skills";
-import { Css3SVG, Html5SVG } from "../theme/icons";
-import { iconPicker, skillOrderChanger } from "../utils";
+import React from "react";
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { changeOrder, selectSkills } from "../app/skillsSlice";
+
+import { iconPicker} from "../utils";
 
 type Props = {
 	title: string;
 };
 
 const SkillCard: React.FC<Props> = ({ title }) => {
-	const [content, setContent] = useState<string>(title);
-	const [currentCard, setCurrentCard] = useState<string>('');
-	
-	
-	const changePlaces = (dropTarget: string) =>{
-		const current = window.localStorage.getItem('currentCard') || ''
-		const target = dropTarget
-			skillOrderChanger(current,target)
-	}
+	const skills = useAppSelector(selectSkills).skills
+	const dispatch = useAppDispatch()
 
+	const changePlaces = (dropTarget: string) => {
+		const current = window.localStorage.getItem("currentCard") || "";
+		const target = dropTarget;
+		skillOrderChanger(current, target);
+	};
 
 	const dragStartHandler = (
 		event: React.DragEvent<HTMLDivElement>,
 		data: string
 	) => {
-		// console.log(skillTitles.filter((skill,index) =>{
-		// 	return skill === data
-		// })[0])
-		setCurrentCard(data)
-		window.localStorage.setItem('currentCard',data)
-		// setCurrentCard(skillTitles.filter((skill,index) =>{
-		// 	return skill === data
-		// })[0])
+		window.localStorage.setItem("currentCard", data);
 	};
 
-	
-	// This makes the box become droppable
-	const dragOverHandler = (event: React.DragEvent<HTMLDivElement>,
-		data: string) => {
-			event.preventDefault();
-			event.stopPropagation();
-		};
-		
-		// This function will be triggered when dropping
-		const dropHandler = (event: React.DragEvent<HTMLDivElement>,
-			data: string) => {
-				// event.preventDefault();
-				// event.stopPropagation();
-				const dropTarget = event.currentTarget.firstElementChild?.innerHTML || ''
-				// if(typeof dropTarget === "string")
-				changePlaces(dropTarget)
-				
-		};
+	const dragOverHandler = (
+		event: React.DragEvent<HTMLDivElement>,
+		data: string
+	) => {
+		event.preventDefault();
+		event.stopPropagation();
+	};
+
+	const dropHandler = (
+		event: React.DragEvent<HTMLDivElement>,
+		data: string
+	) => {
+		const dropTarget =
+			event.currentTarget.firstElementChild?.innerHTML || "";
+		changePlaces(dropTarget);
+	};
+
+
+	const skillOrderChanger = (current: string,target: string) =>{
+		let skillsArray = [...skills]
+		let a = skillsArray.indexOf(current)
+		let b = skillsArray.indexOf(target)		
+		let c = skillsArray[a]
+		skillsArray[a] = skillsArray[b]
+		skillsArray[b] = c
+		dispatch(changeOrder(skillsArray))
+	}
+
+
+
 
 	return (
 		<Box
@@ -70,14 +74,14 @@ const SkillCard: React.FC<Props> = ({ title }) => {
 			}}
 			draggable={true}
 			onDragStart={(event) => dragStartHandler(event, title)}
-			onDragOver={(event) => dragOverHandler(event,title)}
-			onDrop={(event) => dropHandler(event,title)}
+			onDragOver={(event) => dragOverHandler(event, title)}
+			onDrop={(event) => dropHandler(event, title)}
 		>
 			<Box fontSize={"small"} color={"black"}>
-				{content}
+				{title}
 			</Box>
 			<Box pt={"5px"} fill={"black"} color={"black"}>
-				{iconPicker(content)}
+				{iconPicker(title)}
 			</Box>
 		</Box>
 	);
