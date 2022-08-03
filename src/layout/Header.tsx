@@ -19,6 +19,10 @@ const Header = () => {
 
 	window.addEventListener("scroll", handleScroll);
 
+	const handleAnchorClick = (target: string) => {
+		document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<Box
 			bgColor={!color ? "transparent" : "darkgray"}
@@ -34,9 +38,9 @@ const Header = () => {
 			transition={"ease-in-out 500ms"}
 		>
 			<Box display={"flex"}>
-				<Square px={5}>
-					<StarIcon />
-				</Square>
+				{/* <Square px={5}>
+					<StarIcon color={'yellow'} />
+				</Square> */}
 				<Heading
 					as={"h3"}
 					color={!color ? "black" : "white"}
@@ -52,20 +56,27 @@ const Header = () => {
 				alignItems={"center"}
 				gap={5}
 				fontWeight={"bold"}
+				userSelect={'none'}
 			>
-				<a href={"#home"}>
-					<Text>Home</Text>
-				</a>
-				<a href={"#portfolio"}>
-					<Text>Recent work</Text>
-				</a>
-				<a href={"#lifeExperience"}>
-					<Text>Life Experience</Text>
-				</a>
+				<Text cursor={'pointer'}  onClick={() => handleAnchorClick("home")}>Home</Text>
 
-				<Button variant={!color ? 'none' : "secondary"} ml={"20px"}>
-					Send me a message
-				</Button>
+				<Text cursor={'pointer'}  onClick={() => handleAnchorClick("portfolio")}>
+					Recent work
+				</Text>
+
+				<Text cursor={'pointer'} onClick={() => handleAnchorClick("lifeExperience")}>
+					Life Experience
+				</Text>
+
+				<a
+					href='https://api.whatsapp.com/send/?phone=551399886882229'
+					target={"_blank"}
+					rel={"noreferrer"}
+				>
+					<Button variant={!color ? "none" : "secondary"} ml={"20px"}>
+						Send me a message
+					</Button>
+				</a>
 			</Box>
 		</Box>
 	);

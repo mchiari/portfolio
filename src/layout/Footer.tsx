@@ -6,7 +6,7 @@ const Footer = () => {
 		<Box
 			w={"100%"}
 			h={"200px"}
-			bgColor={"black"}
+			bgColor={"darkgray"}
 			color={"white"}
 			display={"flex"}
 			justifyContent={"center"}

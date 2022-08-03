@@ -2,26 +2,26 @@ import { Box, Button, Container, Text, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 const WorkInProgress = () => {
-	const toast = useToast();
-	const [once, setOnce] = useState(false);
+	// const toast = useToast();
+	// const [once, setOnce] = useState(false);
 
-	const handleScroll = () => {
-		if (!once && !toast.isActive("001")) {
-			setOnce(true);
-			toast({
-				title: `Hey! This is a work in progress! Beware of bugs!`,
-				description:
-					"Beware of bugs! 🦗 I'm aware of them and working on it!",
-				status: "warning",
-				variant: "toast",
-				isClosable: true,
-				duration: 9000,
-				id: "001",
-			});
-		}
-	};
+	// const handleScroll = () => {
+	// 	if (!once && !toast.isActive("001")) {
+	// 		setOnce(true);
+	// 		toast({
+	// 			title: `Hey! This is a work in progress! Beware of bugs!`,
+	// 			description:
+	// 				"Beware of bugs! 🦗 I'm aware of them and working on it!",
+	// 			status: "warning",
+	// 			variant: "toast",
+	// 			isClosable: true,
+	// 			duration: 9000,
+	// 			id: "001",
+	// 		});
+	// 	}
+	// };
+	// window.addEventListener("animationend", handleScroll);
 
-	window.addEventListener("animationend", handleScroll);
 	return (
 		<Container
 			my={"32px"}
@@ -41,9 +41,9 @@ const WorkInProgress = () => {
 					xmlns='http://www.w3.org/2000/svg'
 					aria-labelledby='dangerIconTitle'
 					stroke='#0984e3'
-					stroke-width='2'
-					stroke-linecap='round'
-					stroke-linejoin='round'
+					strokeWidth='2'
+					strokeLinecap='round'
+					strokeLinejoin='round'
 					fill='none'
 					color='#000'
 				>

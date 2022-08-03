@@ -9,13 +9,13 @@ import WorkInProgress from "../components/WorkInProgress";
 
 const Main = () => {
 	return (
-		<Box bgColor={"lightestgray"}>
+		<Box bgColor={"blue2"}>
 			<Landing />
 			<WorkInProgress />
 			<About />
 			<Portfolio />
 			<Experience />
-			<News />
+			{/* <News /> */}
 		</Box>
 	);
 };

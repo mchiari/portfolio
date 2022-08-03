@@ -5,7 +5,7 @@ import Skills from "./Skills";
 const About = () => {
 	return (
 		<Box
-			bgColor={"lightestgray"}
+			bgColor={"blue2"}
 			pb={"64px"}
 			display={"flex"}
 			justifyContent={"center"}

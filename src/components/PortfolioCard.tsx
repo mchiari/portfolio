@@ -13,16 +13,15 @@ export const PortfolioCard = ({
 }: PortfolioCasesProps) => {
 	return (
 		<Box
-		backgroundColor={'ice'}
+			backgroundColor={"ice"}
 			position={"relative"}
 			display={"flex"}
 			alignItems={"center"}
 			flexDirection={"row-reverse"}
 			justifyContent={"space-between"}
-			w={"700px"}
-			h={"400px"}
-			pr={"16px"}
-			pl={"32px"}
+			w={"600px"}
+			// minH={"320px"}
+			p={"16px"}
 			border={"solid 1px rgba(0,0,0,0.2)"}
 			borderRadius={"4px"}
 			boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.2)"}
@@ -35,27 +34,28 @@ export const PortfolioCard = ({
 				<Box
 					p={"8px"}
 					borderRadius={"4px"}
-					h={"370px"}
-					w={"400px"}
+					h={"250px"}
+					w={"250px"}
 					backgroundImage={image}
 					backgroundSize={"cover"}
 				/>
 			</a>
 
 			<Box
-				maxW={"400px"}
-				h={"80%"}
 				display={"flex"}
 				flexDirection={"column"}
 				justifyContent={"space-between"}
 				textAlign={"left"}
-				pr={"32px"}
+				pr={"16px"}
+				h={"250px"}
 			>
+				<Text>
+					<strong>{title}</strong>
+				</Text>
+
+				<Text py={5}>{description}</Text>
+
 				<Box>
-					<Text>
-						<strong>{title}</strong>
-					</Text>
-					<Text py={5}>{description}</Text>
 					<Text>
 						<em>
 							{tags
@@ -65,27 +65,28 @@ export const PortfolioCard = ({
 								.join(" - ")}
 						</em>
 					</Text>
-				</Box>
 
-				<Box display={"flex"} gap={"10px"}>
-					<a href={link} target={"_blank"} rel={"noreferrer"}>
+					<Box display={"flex"} gap={"10px"}>
+						<a href={link} target={"_blank"} rel={"noreferrer"}>
+							<Button
+								aria-label='visit website'
+								rightIcon={<ExternalLinkIcon />}
+								mt={5}
+							>
+								Visit
+							</Button>
+						</a>
 						<Button
-							aria-label='visit website'
-							rightIcon={<ExternalLinkIcon />}
+							aria-label='github'
+							rightIcon={<GithubIconWhite />}
+							variant={"dark"}
 							mt={5}
 						>
-							Visit
+							Repo
 						</Button>
-					</a>
-					<Button
-						aria-label='github'
-						rightIcon={<GithubIconWhite />}
-						variant={"dark"}
-						mt={5}
-					>
-						Repo
-					</Button>
+					</Box>
 				</Box>
+
 			</Box>
 		</Box>
 	);

@@ -25,42 +25,42 @@ export const projects = [
         image: '../imgs/redux-movie.jpg',
         link: 'https://reduxmovie.vercel.app/',
         title: 'Redux movie database',
-        description: 'Study project made using',
+        description: 'Study project - Coded alongside with youtube video. The idea was to create a React app that could fetch and display movies data on demand.',
         tags: ['Javascript', 'React', 'Redux']
     },
     {
         image: '../imgs/react-styled.jpg',
         link: 'https://react-website-styled-components.vercel.app/',
         title: 'Styled-Components',
-        description: 'Study project - Simple styled website, introducing styled-components to my skillset.',
+        description: 'Study project - Simple styled website, introducing Styled-Components to my skillset. Made some customizations for a job interview.',
         tags: ['Javascript', 'React', 'Styled-Components']
     },
     {
         image: '../imgs/placeholder.jpg',
         link: 'https://placeholder-plum.vercel.app/',
-        title: 'App made for an internship interview',
-        description: 'Study project made using',
-        tags: ['Javascript', 'React']
+        title: 'Placeholder timeline',
+        description: 'App made for an internship interview. The idea was to use a mock placeholder API to fetch and display organized data from multiple endpoints.',
+        tags: ['Javascript', 'React', 'Redux', 'Axios']
     },
     {
         image: '../imgs/cryptoverse.jpg',
         link: 'https://cryptoverse-jade.vercel.app/',
         title: 'Cryptoverse',
-        description: 'Study project - Simple crypto website created to train REST API data manipulation.',
-        tags: ['Javascript', 'React', 'Axios', 'REST API']
+        description: 'Study project - Simple crypto website created to practice REST API data manipulation.',
+        tags: ['Javascript', 'React', 'Axios']
     },
     {
         image: '../imgs/letreco.jpg',
         link: 'https://letreco-snowy.vercel.app/',
         title: 'Letreco',
-        description: 'Study project made using',
-        tags: ['javascript', 'react']
+        description: 'Study project - Simple remake of a popular wordle game. Mostly logic and minial design.',
+        tags: ['Javascript', 'React', 'HTML', 'CSS']
     },
     {
         image: '../imgs/pokedex.jpg',
         link: 'https://pokedex-five-gray.vercel.app/',
         title: 'Pokédex',
-        description: 'Study project made using',
-        tags: ['javascript', 'react']
+        description: 'Study project - Coded following Youtube instructions. Fetching data and using React context.',
+        tags: ['Javascript', 'React', 'Context', 'Fetch']
     },
 ]

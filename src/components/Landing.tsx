@@ -41,7 +41,7 @@ const Landing = () => {
 						Hello! My name is Matheus Chiari and I am a Front-End developer
 					</Heading>
 					<Text fontSize={"xl"} as={motion.p} animation={animationTitle}>Who is comitted to making complicated stuff simple.</Text>
-					<Text fontSize={"sm"} as={motion.p} animation={animationTitle}>@mchiaridev</Text>
+					{/* <Text fontSize={"sm"} as={motion.p} animation={animationTitle}>@mchiaridev</Text> */}
 				</Box>
 
 				<Box

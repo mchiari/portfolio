@@ -11,7 +11,7 @@ const Experience = () => {
 			py={"60px"}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			id={"lifeExperience"}
-			bgColor={"lightestgray"}
+			bgColor={"blue2"}
 		>
 			<Box
 				display={"flex"}
