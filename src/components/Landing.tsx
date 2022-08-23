@@ -1,11 +1,13 @@
 import { AtSignIcon, ExternalLinkIcon, Icon, StarIcon } from "@chakra-ui/icons";
 import { Box, Button, Heading, Image, keyframes, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { LinkedinIconWhite, InstagramIconWhite, GithubIconWhite } from "../theme/icons";
+import {
+	LinkedinIconWhite,
+	InstagramIconWhite,
+	GithubIconWhite,
+} from "../theme/icons";
 
 const Landing = () => {
-
-
 	const titleKeyframes = keyframes`
 	0% { opacity: 0; transform: translateX(-100px)  }
 	100% { opacity: 1; transform: translateX(0)  }
@@ -17,17 +19,22 @@ const Landing = () => {
 	return (
 		<Box
 			position={"relative"}
-			bgColor={'white'}
-			h={["150vh","100vh","140vh","85vh","70vh"]}
+			bgColor={"white"}
+			h={["100vh", "100vh", "90vh", "70vh", "70vh"]}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			display={"flex"}
-			flexDirection={["column-reverse","column-reverse","column","row"]}
+			flexDirection={[
+				"column-reverse",
+				"column-reverse",
+				"column",
+				"row",
+			]}
 			justifyContent={"center"}
 			alignItems={"center"}
-			gap={32}
-			w={'100%'}
-			paddingTop={['300px','300px','0']}
-			id={'home'}
+			w={"100%"}
+			paddingTop={["50px", "100px", "0"]}
+			id={"home"}
+			gap={['32px','64px', '32px']}
 		>
 			<Box
 				display={"flex"}
@@ -35,28 +42,42 @@ const Landing = () => {
 				justifyContent={"left"}
 				textAlign={"left"}
 				alignItems={"left"}
+				width={['320px','400px','600px','600px','800px','800px']}
 			>
-				<Box display={"flex"} flexDir={"column"} gap={5}>
-					<Heading as={motion.h1} animation={animationTitle} w={'400px'}>
-						Hello! My name is Matheus Chiari and I am a Front-End developer
+				<Box
+					display={"flex"}
+					flexDir={"column"}
+					gap={5}
+					padding={"16px"}
+				>
+					<Heading as={motion.h1} animation={animationTitle}>
+						Hello! My name is Matheus Chiari and I am a Front-End
+						developer
 					</Heading>
-					<Text fontSize={"xl"} as={motion.p} animation={animationTitle}>Who is comitted to making complicated stuff simple.</Text>
+					<Text
+						fontSize={"xl"}
+						as={motion.p}
+						animation={animationTitle}
+					>
+						Who is comitted to making complicated stuff simple.
+					</Text>
 					{/* <Text fontSize={"sm"} as={motion.p} animation={animationTitle}>@mchiaridev</Text> */}
 				</Box>
 
 				<Box
-					py={"20px"}
 					display={"flex"}
+					flexDirection={["column","column", "row"]}
 					justifyContent={"left"}
 					alignItems={"center"}
 					gap={"20px"}
+					padding={"16px"}
 				>
 					<a
 						href={"https://www.linkedin.com/in/mchiaridev/"}
 						target={"_blank"}
 						rel={"noreferrer"}
 					>
-						<Button rightIcon={<LinkedinIconWhite />}>
+						<Button rightIcon={<LinkedinIconWhite />} w={"150px"}>
 							LinkedIn
 						</Button>
 					</a>
@@ -67,8 +88,8 @@ const Landing = () => {
 					>
 						<Button
 							variant={"dark"}
-							
 							rightIcon={<GithubIconWhite />}
+							w={"150px"}
 						>
 							Github
 						</Button>
@@ -81,6 +102,7 @@ const Landing = () => {
 						<Button
 							variant={"dark"}
 							rightIcon={<InstagramIconWhite />}
+							w={"150px"}
 						>
 							Instagram
 						</Button>
@@ -94,12 +116,10 @@ const Landing = () => {
 				</Box>
 				<Image
 					src={"/imgs/notebook.png"}
-					boxSize={'300px'}
+					boxSize={["250px"]}
 					transform={"scaleX(-1) scale(1.3)"}
 				/>
 			</Box>
-
-			
 		</Box>
 	);
 };

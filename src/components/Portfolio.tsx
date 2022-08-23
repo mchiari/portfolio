@@ -21,19 +21,18 @@ const Portfolio = () => {
             position={"relative"}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
         >
-            <Box pl={"100px"} py={'50px'} display={"flex"}>
-                <Heading as='h2'>Recent work</Heading>
+            <Box pl={[null,"100px"]} py={'50px'} display={"flex"}>
+                <Heading as='h2'>Recent study projects</Heading>
             </Box>
 
             <Box
                 h={"auto"}
                 maxW={"100%"}
                 display={"flex"}
-                gap={"40px"}
+                gap={"32px"}
                 justifyContent={"center"}
                 alignItems={"center"}
                 flexWrap={"wrap"}
-                pb={'24px'}
             >
                 {projects.map((project: PortfolioCasesProps, index: number) => {
                     return (

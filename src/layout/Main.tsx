@@ -9,7 +9,7 @@ import WorkInProgress from "../components/WorkInProgress";
 
 const Main = () => {
 	return (
-		<Box bgColor={"blue2"}>
+		<Box bgColor={"ice"}>
 			<Landing />
 			<WorkInProgress />
 			<About />

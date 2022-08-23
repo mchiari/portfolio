@@ -5,7 +5,7 @@ import Skills from "./Skills";
 const About = () => {
 	return (
 		<Box
-			bgColor={"blue2"}
+			bgColor={"ice"}
 			pb={"64px"}
 			display={"flex"}
 			justifyContent={"center"}
@@ -63,6 +63,7 @@ const About = () => {
 				</Box>
 				<Box>
 					<Skills />
+					<Text fontSize={'12px'} color={'lightgray'}><em>Try to drag the skills and change their order</em></Text>
 				</Box>
 			</Box>
 		</Box>

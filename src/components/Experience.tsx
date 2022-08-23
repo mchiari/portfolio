@@ -11,20 +11,20 @@ const Experience = () => {
 			py={"60px"}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			id={"lifeExperience"}
-			bgColor={"blue2"}
+			bgColor={"ice"}
 		>
 			<Box
 				display={"flex"}
-				w={["350px", "600px", "800px", "1000px", "1200px", "1300px"]}
+				w={["350px","600px","800px","1000px","1200px","1300px"]}
 				bgColor={"white"}
 				border={"solid 1px rgba(0,0,0,0.2)"}
 				borderRadius={"4px"}
 				boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.5)"}
-				padding={"32px"}
+				// padding={"32px"}
 				flexDir={["column"]}
 			>
-				<Box pl={"100px"} py={"50px"} display={"flex"}>
-					<Heading as='h2'>Life Experience</Heading>
+				<Box pl={"16px"} py={"50px"} display={"flex"}>
+					<Heading as='h2'>Life experience</Heading>
 				</Box>
 				<Box>
 
@@ -64,7 +64,7 @@ const Experience = () => {
 						/>
 					<ExperienceSection
 						date={"jan, 2010 to dec, 2014"}
-						title={"SYSTEMS DEVELOPMENT"}
+						title={"SYSTEMS ANALISYS AND DEVELOPMENT"}
 						role={"Federal Institute of Science and Technology"}
 						place={"Cubatão, Brazil"}
 						description={`In love with computer systems and it's development, studied computer architecture, networks, data structure, web and local development. Worked mostly with Javascript and C#, having had a few intership experiences.`}
