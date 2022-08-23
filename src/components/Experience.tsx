@@ -17,13 +17,14 @@ const Experience = () => {
 				display={"flex"}
 				w={["350px","600px","800px","1000px","1200px","1300px"]}
 				bgColor={"white"}
+				alignContent={'center'}
+				justifyContent={'center'}
 				border={"solid 1px rgba(0,0,0,0.2)"}
 				borderRadius={"4px"}
 				boxShadow={"2px 2px 8px 0px rgba(0,0,0,0.5)"}
-				// padding={"32px"}
 				flexDir={["column"]}
 			>
-				<Box pl={"16px"} py={"50px"} display={"flex"}>
+				<Box py={"50px"}>
 					<Heading as='h2'>Life experience</Heading>
 				</Box>
 				<Box>

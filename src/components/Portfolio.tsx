@@ -14,12 +14,14 @@ const Portfolio = () => {
         <Container
             display={"flex"}
             flexDirection={"column"}
+            justifyContent={'center'}
+            alignItems={'center'}
             bgColor={"white"}
             maxW={"100%"}
-            py={'60px'}
             id={'portfolio'}
             position={"relative"}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
+            pb={'48px'}
         >
             <Box pl={[null,"100px"]} py={'50px'} display={"flex"}>
                 <Heading as='h2'>Recent study projects</Heading>
@@ -27,7 +29,7 @@ const Portfolio = () => {
 
             <Box
                 h={"auto"}
-                maxW={"100%"}
+                maxW={"1300px"}
                 display={"flex"}
                 gap={"32px"}
                 justifyContent={"center"}
