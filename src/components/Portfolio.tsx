@@ -23,7 +23,7 @@ const Portfolio = () => {
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
             pb={'48px'}
         >
-            <Box pl={[null,"100px"]} py={'50px'} display={"flex"}>
+            <Box py={'50px'} display={"flex"}>
                 <Heading as='h2'>Recent study projects</Heading>
             </Box>
 
