@@ -6,10 +6,11 @@ const About = () => {
 	return (
 		<Box
 			bgColor={"ice"}
-			pb={"64px"}
+			py={"64px"}
 			display={"flex"}
 			justifyContent={"center"}
 			alignItems={"center"}
+
 		>
 			<Box
 				display={"flex"}

@@ -11,10 +11,10 @@ const Main = () => {
 	return (
 		<Box bgColor={"ice"}>
 			<Landing />
-			<WorkInProgress />
 			<About />
 			<Portfolio />
 			<Experience />
+			{/* <WorkInProgress /> */}
 			{/* <News /> */}
 		</Box>
 	);
