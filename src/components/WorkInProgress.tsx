@@ -51,9 +51,8 @@ const WorkInProgress = () => {
 				</svg>
 			</Box>
 			<Text color={"blue"}>
-				Please advise: all of this is a work in progress! You may also
-				experience some problems with smaller screens. Don't worry. I'm
-				aware and working on it!
+				Please advise: all of this is a work in progress! Don't worry. I'm
+				working on it!
 			</Text>
 		</Container>
 	);
