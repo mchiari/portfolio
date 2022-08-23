@@ -63,7 +63,7 @@ const About = () => {
 				</Box>
 				<Box>
 					<Skills />
-					<Text fontSize={'12px'} color={'lightgray'}><em>Try to drag the skills and change their order</em></Text>
+					<Text fontSize={'12px'} color={'lightgray'}><em>If you are on a PC, why don't you try to drag the skills and change their order?</em></Text>
 				</Box>
 			</Box>
 		</Box>

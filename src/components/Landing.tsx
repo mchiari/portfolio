@@ -20,7 +20,7 @@ const Landing = () => {
 		<Box
 			position={"relative"}
 			bgColor={"white"}
-			h={["100vh", "100vh", "90vh", "70vh", "70vh"]}
+			h={["110vh", "110vh", "90vh", "70vh", "70vh"]}
 			boxShadow={"0 0 4px 4px rgba(0,0,0,0.2)"}
 			display={"flex"}
 			flexDirection={[
