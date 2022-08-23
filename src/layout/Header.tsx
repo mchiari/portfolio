@@ -62,31 +62,23 @@ const Header = () => {
 						bgColor={!color ? "white" : "darkgray"}
 						border={color ? "none" : "solid 1px lightgray"}
 					>
-						<MenuItem>
-							<Text
-								cursor={"pointer"}
-								onClick={() => handleAnchorClick("home")}
-							>
-								Home
-							</Text>
+						<MenuItem
+							cursor={"pointer"}
+							onClick={() => handleAnchorClick("home")}
+						>
+							<Text>Home</Text>
 						</MenuItem>
-						<MenuItem>
-							<Text
-								cursor={"pointer"}
-								onClick={() => handleAnchorClick("portfolio")}
-							>
-								Recent work
-							</Text>
+						<MenuItem
+							cursor={"pointer"}
+							onClick={() => handleAnchorClick("portfolio")}
+						>
+							<Text>Recent work</Text>
 						</MenuItem>
-						<MenuItem>
-							<Text
-								cursor={"pointer"}
-								onClick={() =>
-									handleAnchorClick("lifeExperience")
-								}
-							>
-								Life Experience
-							</Text>
+						<MenuItem
+							cursor={"pointer"}
+							onClick={() => handleAnchorClick("lifeExperience")}
+						>
+							<Text>Life Experience</Text>
 						</MenuItem>
 					</MenuList>
 				</Menu>
