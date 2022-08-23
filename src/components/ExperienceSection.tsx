@@ -27,7 +27,7 @@ const ExperienceSection = (props: experienceSectionProps) => {
 	const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 
 	return (
-		<Box display={"flex"} gap={'16px'} minH={"150px"}>
+		<Box display={"flex"} gap={"16px"} minH={"150px"}>
 			<Box w={"16px"} borderLeft={"solid 4px #f0f0f0"}>
 				<Box
 					animation={animation}
@@ -54,7 +54,7 @@ const ExperienceSection = (props: experienceSectionProps) => {
 				justifyContent={"flex-start"}
 				alignItems={"flex-start"}
 				transform={"translate(0,-6px)"}
-        textAlign={'left'}
+				textAlign={"left"}
 			>
 				<Text color={"dark"}>
 					<strong>{props.date}</strong>
@@ -76,7 +76,7 @@ const ExperienceSection = (props: experienceSectionProps) => {
 				transform={"translate(0,-6px)"}
 				pb={"60px"}
 			>
-				<Text pb={5}>{props.description}</Text>
+				<Text pb={'32px'}>{props.description}</Text>
 			</Box>
 		</Box>
 	);
