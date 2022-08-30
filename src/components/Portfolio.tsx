@@ -43,6 +43,7 @@ const Portfolio = () => {
                                 key={"project-" + project.title}
                                 image={project.image}
                                 link={project.link}
+                                githubLink={project.githubLink}
                                 title={project.title}
                                 description={project.description}
                                 tags={project.tags}

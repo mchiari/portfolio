@@ -7,6 +7,7 @@ import { GithubIconBlack, GithubIconWhite } from "../theme/icons";
 export const PortfolioCard = ({
 	image,
 	link,
+	githubLink,
 	title,
 	description,
 	tags,
@@ -76,14 +77,16 @@ export const PortfolioCard = ({
 							Visit
 						</Button>
 					</a>
+					<a href={githubLink} target={'_blank'} rel={"noreferrer"}>
 					<Button
 						aria-label='github'
 						rightIcon={<GithubIconWhite />}
 						variant={"dark"}
 						mt={5}
-					>
+						>
 						Repo
 					</Button>
+						</a>
 				</Box>
 			</Box>
 		</Box>

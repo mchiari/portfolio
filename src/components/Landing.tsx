@@ -94,7 +94,7 @@ const Landing = () => {
 							Github
 						</Button>
 					</a>
-					<a
+					{/* <a
 						href={"https://instagram/chiarimatheus"}
 						target={"_blank"}
 						rel={"noreferrer"}
@@ -106,7 +106,7 @@ const Landing = () => {
 						>
 							Instagram
 						</Button>
-					</a>
+					</a> */}
 				</Box>
 			</Box>
 
