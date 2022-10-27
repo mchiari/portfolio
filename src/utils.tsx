@@ -1,5 +1,5 @@
 import { skillTitles } from "./data/skills";
-import { AgileMethodologySVG, ChakraUiSVG, CorelSVG, Css3SVG, FigmaSVG, Html5SVG, JavascriptSVG, MaterialUiSVG, ReactSVG, ReduxSVG, StyledComponentsSVG, TypescriptSVG } from "./theme/icons";
+import { AgileMethodologySVG, ChakraUiSVG, CorelSVG, Css3SVG, TailwindSVG, FigmaSVG, Html5SVG, JavascriptSVG, MaterialUiSVG, ReactSVG, ReduxSVG, StyledComponentsSVG, TypescriptSVG } from "./theme/icons";
 
 export const iconPicker = (title: string) =>{
     switch (title) {
@@ -25,6 +25,8 @@ export const iconPicker = (title: string) =>{
             return <ChakraUiSVG />
         case "Azure":
             return <AgileMethodologySVG />
+        case "Tailwind":
+            return <TailwindSVG />
         case "Corel Draw":
             return <CorelSVG />
             default:

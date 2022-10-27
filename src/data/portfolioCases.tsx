@@ -9,6 +9,14 @@ export type PortfolioCasesProps = {
 
 export const projects = [
     {
+        image: '../imgs/lab-ds.jpg',
+        link: 'https://lab-ds-mchiari.vercel.app/',
+        githubLink: 'https://github.com/mchiari/lab-ds',
+        title: 'Login page - Design System',
+        description: 'Front-end study project - Implementing a tiny design system created on Storybook. Integrated tests.',
+        tags: ['Typescript', 'React', 'Tailwind', 'Figma', 'Vite', 'Storybook', 'Jest']
+    },
+    {
         image: '../imgs/shopping-cart-ts.jpg',
         link: 'https://shopping-cart-ts-react.vercel.app/',
         githubLink: 'https://github.com/mchiari/shopping-cart-ts-react',

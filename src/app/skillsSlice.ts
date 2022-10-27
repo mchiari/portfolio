@@ -16,7 +16,7 @@ const initialState: skillsState  = {
         "Redux",
         "Styled",
         "Figma",
-        "Material UI",
+        "Tailwind",
         "Chakra UI",
         "Azure",
         "Corel Draw",
